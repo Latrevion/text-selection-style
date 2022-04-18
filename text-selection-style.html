@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>text-selection-style</title>
+  <style>
+    ::selection {
+      background: aquamarine;
+      color: black;
+    }
+
+    .text::selection {
+      background: skyblue;
+      color: white;
+    }
+    /* <!--https://developer.mozilla.org/zh-CN/docs/Web/CSS/::selection  --> */
+  </style>
+</head>
+<body>
+<p class="text">选中这段文字带天蓝色</p>
+<p>选中这段文字会带有绿色</p>
+
+</body>
+</html>
